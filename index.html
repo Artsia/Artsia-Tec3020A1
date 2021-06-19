@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="shopStyle.css" type="text/css">
+
+        <!--Boostrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Phillip">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gamer 4 Life</title>
+    </head>
+
+    <body>
+
+
+        <header>
+
+            <div class="headerContainer">
+            
+                <nav>
+
+                    <div class ="logo">
+                        <img id="logoImage" src="logo.jpg" alt="picture of logo">
+                    </div>
+
+
+                    <div class="navBar"> <!--navbar = menu-->
+                        
+                        <ul>
+                            <li><a class="navLink" href="main.html" target="_blank">HOME</a></li>
+                            <li><a class="navLink" href="index.html">SHOP</a></li>
+                            <li><a class="navLink" href="indexContact.html" target="_blank">CONTACT</a></li>
+                            <li><a class="navLink" href="#">CART</a></li>
+                            <li class="navLink">
+                                <form name="mySearchForm">
+                                    <input type="text" name="mySearchField" value="Search">
+                                </form>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+
+                <div class="welcome">
+                    <h1>Shop</h1>
+                </div>
+
+            </div>    
+
+
+        </header>
+
+
+        <section id="showProduct">
+
+            <div class="container">
+            
+                <!--leave image as is-->
+
+                <div class="acerImageContainer">
+                    
+                    <img src="acer.jpg" alt="picture of acer computer" width="280" height="280">
+                    
+                </div>
+
+
+                <!--make float to the right of the screen-->
+                    
+                <div class="infoContainer">
+
+                    <div class="info">
+
+                        <div id="productTitle" >
+                            <h2>Acer</h2> 
+                        </div>     
+
+                        <div class="spacing"></div>
+
+                        <div class="productWeight">3.00 - 5.80 kg</div>
+
+                        <p id="sellInfo">Sold as is</p>
+
+                        <div class="spacing"></div>
+
+                        <div class="thePrice">
+                            <div>
+                                <p>$400</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                       
+                    <!--give each div a id or class to refer to in css-->
+                    <div class="containerPQA">
+
+                        <div class="productQuantityAdjusting">
+
+                            <div class="Quantity">
+                                Quantity
+                            </div>
+
+                            <div class="spacing"></div>
+
+                            <div class="adjustNumberOfProduct">
+
+                                <button class="decreseButton" name="myButtonD">-</button>
+                                <span>
+                                    <input type="number" id="myinput">
+                                </span>
+                                <button class="increaseButton" name="myButtonI">+</button>
+
+                            </div>
+
+                            <div class="spacing"></div>
+
+                        </div>    
+
+                        
+                        <!--add to cart and view cart buttons-->
+
+                        <div class="cartContainerButtons">
+
+                            <div class="spacing"></div>
+
+                            <button class="addToCart">Add to cart</button>
+                            
+                            <div class="verticleSpacing"></div>
+                            <button class="viewCart">View cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </section>
+
+         
+        <section class="pickChoiceTitle">
+            
+            <h2>Customize Your Device</h2>
+
+        </section>
+
+
+
+        <section id="variatyContainer">
+
+            <div class="variatyInfoContainer">
+
+            
+                <div class="box">
+
+                    <h2>Sizes</h2>
+                    <!--name attribute dffrent for each input for js-->
+
+                    <form name="myProductSizesForm">
+                        
+                        <input type="radio" id="size12" value="size12" name="s">
+                        <label for="size12">12"</label><br/>
+
+                        <input type="radio" id="size15" value="size15" name="s">
+                        <label for="size15">15"</label><br/>
+
+                        <input type="radio" id="size20" value="size20" name="s">
+                        <label for="size20">20"</label><br/>
+                    </form>  
+                </div>
+
+
+                <div class="box">
+                    <h2>Colors</h2>
+
+                    <form name="myProductColorsForm">
+                        
+                        <input type="radio" id="color1" value="color1" name="c">
+                        <label for="color1">Red</label><br/>
+
+                        <input type="radio" id="color2" value="color2" name="c">
+                        <label for="color2">Green</label><br/>
+
+                        <input type="radio" id="color3" value="color3" name="c">
+                        <label for="color3">Blue</label><br/>
+                    </form>    
+                </div>
+
+                <div class="box">
+                   <h2>Models</h2>
+
+                    <form name="myProductModelsForm">
+                        
+                        <input type="radio" id="model1" value="model1" name="m">
+                        <label for="model1">AP714-51T-59ZV</label><br/>
+
+                        <input type="radio" id="model2" value="model2" name="m">
+                        <label for="model2">AP714-51GT-716C</label><br/>
+
+                        <input type="radio" id="model3" value="model3" name="m">
+                        <label for="model3">SF314-43-R36M</label><br/>
+                    </form>    
+                </div>
+
+                <!--contains a button that will take user to choosen computer based on selected choices in each menue-->
+
+                <div class="spacing"></div>
+                <div class="spacing"></div>
+
+
+                <div class="submitButton">
+                    <button id="btnSubmit" onclick="getInfoOfRadioButtons()">SUBMIT</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="description">
+
+            <div><h2>Description</h2></div>
+            <div id =desc>
+                <ul>
+                    <li>Infused with a 10th Gen Intel® Core™ i7 Processor. Its made for games</li>
+                </ul>
+            </div>
+           
+        </section>
+
+        <br/>
+       
+
+        <section id="details">
+
+            <div><h2>Details</h2></div>
+
+            <div id="characteristics">
+                <ul>
+                    <li>Windows 10 Home</li>
+                    
+                    <li>AMD Ryzen™ 3 5300U processor Quad-core 2.60 GHz</li>
+                    
+                    <li>MD Radeon™ Graphics shared memory</li>
+                    
+                    <li>14" Full HD (1920 x 1080)</li>
+                    
+                    <li>16:9 IPS Touchscreen</li>
+                   
+                    <li>8 GB, LPDDR4X</li>
+                    
+                    <li>512 GB SSD</li>
+                    
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!--promotion section-->
+
+        <section id="promoContainer">
+
+            <div><h2>Promotion</h2></div>
+
+            <div class ="promoInfoContainer">
+
+                <div class="threeDiv">
+                    <h2>Aspire 3</h2>
+
+                    <img src="Aspire7.png" alt="picture of aspire 7 laptop">
+                    <div class="threeP">
+                        <p>Aspire 17.3" HD LED</p>
+                        <p>Price: $700</p>
+                        <p>4GB, 500GB, Radeon</p>
+                        <p>Intel Core i5-1035G1</p>
+                        <p><a href="https://www.walmart.ca/en/ip/acer-aspire-3-173-laptop-intel-core-i3-1005g1-a317-52-345u-black/6000203268143" target="_blank">link</a></p>
+                    </div>
+                    
+                </div>
+
+                <div class="threeDiv">
+                    <h2>Aspire 5</h2>
+                    <img src="Aspire7.png" alt="picture of aspire 8 laptop">
+                    <div class="threeP">
+                        <p>Aspire 14" HD LED</p>
+                        <p>Price: $600</p>
+                        <p>+500GB RAM</p>
+                        <p>16:9 ratio</p>
+                        <p><a href="https://www.walmart.ca/en/ip/acer-aspire-5-14-laptop-intel-core-i5-1035g1-charcoal-black/6000202604044" target="_blank">link</a></p>
+                    </div>
+                </div>
+
+
+                <div class="threeDiv">
+                    <h2>Aspire 3</h2>
+                    <img src="Aspire7.png" alt="picture of aspire 9 laptop">
+                    <div class="threeP">
+                        <p>Aspire 15.6" HD LED</p>
+                        <p>Price: $400</p>
+                        <p>4 Core</p>
+                        <p>UHD Graphics</p>
+                        <p><a href="https://www.walmart.ca/en/ip/acer-aspire-3-156-laptop-amd-a4-9120e-a315-22-461r/6000201784907" target="_blank">link</a></p>
+                    </div>
+                    
+                </div>
+
+             </div>
+
+
+        </section>
+
+
+        <script src="script.js"></script>
+
+
+    </body>    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    

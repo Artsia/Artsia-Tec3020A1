@@ -1,0 +1,551 @@
+body
+{
+	margin:0;
+	padding: 0;
+	font-family: monospace;
+	width: 100%;
+
+}
+
+.spacing
+{
+
+	margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    display: block;
+
+
+}
+
+/*colors: #F0F0F0*/
+
+
+
+header
+{
+	width: 100%;
+	height: 100vh;
+	background: url(image1.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+
+.navBar
+{
+
+	float: right;
+}
+
+
+nav
+{
+	width: 100%;
+	position: fixed;/**/
+	padding: 0px 20px 0px 20px;
+	background: #F0F0F0;
+	/*border-bottom: 2px solid blueviolet;*/
+	opacity: 65%;
+
+
+}
+
+.logo img
+{
+	float: left;
+	width: 150px; 
+	height: auto;
+	margin-top:5px ;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul
+{
+
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+nav ul li
+{
+
+	display: inline-block;
+	margin-top: 5px;
+	padding: 25px;
+	/*opacity: 50%;*/
+}
+
+
+nav ul li a
+{
+	color: black;
+	text-decoration: none;
+	transition: all 0.1s ease-in;
+	font-size: 20px;
+
+}
+
+nav ul li a:hover
+{
+
+	/*color: #ff8c00;*/
+	color: plum;
+	text-decoration: none;
+	transition: all 0.1s ease-in;
+
+}
+
+
+.welcome
+{
+	/*text-align: centre;*/
+	float: left;
+	margin-top: 220px;
+}
+
+
+.welcome h1
+{
+	color: whitesmoke;
+	font-size: 50px; 
+	margin-left:250px;
+}
+
+.welcome h1:hover
+{
+	color: plum;
+}
+
+.welcome h2
+{
+	color: whitesmoke;
+	font-size: 35px; 
+	margin-left:250px;
+}
+
+.welcome h2:hover
+{
+	color: plum;
+}
+
+/*end of header section*/
+
+
+/*The FIRST Section*/
+
+#showProduct 
+{
+
+	background-color:white;
+
+}
+
+#showProduct .container
+{
+
+	position: relative;
+
+}
+
+#showProduct .container .acerImageContainer
+{
+
+	position: absolute;
+	/*opacity: 100%;*/
+	/*border: 2px solid green;*/
+
+}
+
+#showProduct .container .acerImageContainer img
+{
+
+	/*opacity: 50%;*/
+}
+
+
+#showProduct .container .infoContainer .info #productTitle h2
+{
+	font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 16px;
+
+}
+
+
+#showProduct .container .infoContainer .info .productWeight
+{
+
+	display: flex;
+	padding-top: 5px;
+	color: black;
+	font-weight: 400;
+	font-size: 1rem;
+	/*display: -webkit-box;*/ /*re-visit*/
+
+
+}
+
+#showProduct .container .infoContainer .info #sellInfo 
+{
+
+	color: black;
+	font-weight: 400;
+	height: auto;
+	font-size: 1rem;
+	line-height: 1.3rem;
+	/*display: -webkit-box;*/
+	max-width: 100%;
+
+}
+
+#showProduct .container .infoContainer .info .thePrice
+{
+	color: black;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+
+#showProduct .container .containerPQA .productQuantityAdjusting .Quantity
+{
+	font-size: 1rem;
+	font-style: normal;
+    font-weight: 400;
+
+}
+
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct
+{
+	display: inline-block;
+	font-size: 1rem;
+	vertical-align: middle;
+	float: none;
+}
+
+
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct .decreseButton
+{
+
+	min-height: 50px;
+    position: relative;
+    padding: 0px;
+    border-top-left-radius: 25px;
+    background-color: purple;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: white;
+    width: 55px;
+    height: 45px;
+}
+
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct .decreseButton:hover
+{
+	color: plum ;
+
+}
+
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct span
+{
+
+	position: relative;
+}
+
+/*change look of input box*/
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct span input
+{
+	color: black;
+	width: 50px;
+	height: 30px;
+}
+
+
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct .increaseButton
+{
+
+    position: relative;
+    padding: 0px;
+    border-bottom-right-radius: 21px;
+    background-color: purple;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: white;
+    width: 55px;
+    height: 45px;
+
+}
+
+#showProduct .container .containerPQA .productQuantityAdjusting .adjustNumberOfProduct .increaseButton:hover
+{
+	color: plum ;
+}
+
+/*change add to cart button*/ 
+
+
+#showProduct .container .containerPQA .cartContainerButtons
+{
+
+	display: flex;
+}
+
+
+#showProduct .container .containerPQA .cartContainerButtons .addToCart
+{
+
+    /*position: relative;*/
+    width: 100%;
+    padding: 8px 0px;
+    border-radius: 21px;
+    border-width: 1px;
+    font-size: 1rem;
+    background-color: purple;
+    color: white;
+    min-height: 45px;
+}
+/**add hover effect on add to cart*/
+
+#showProduct .container .containerPQA .cartContainerButtons .addToCart:hover
+{
+	color: plum;
+}
+
+.verticleSpacing
+{
+	padding-right: 5px;
+}
+
+
+#showProduct .container .containerPQA .cartContainerButtons .viewCart
+{
+	
+    position: relative;
+    width: 100%;
+    padding: 8px 0px;
+    border-radius: 21px;
+    border-width: 1px;
+    font-size: 1rem;
+    background-color: purple;
+    color: white;
+    min-height: 45px;
+
+
+}
+
+/**add hover effect on add to cart*/
+
+#showProduct .container .containerPQA .cartContainerButtons .viewCart:hover
+{
+	color: plum;
+
+}
+
+
+#showProduct .container .infoContainer 
+{
+
+	position: relative;
+	border-bottom: 3px solid #F0F0F0;
+	height: 400px;
+}
+
+/**move info about acer to the right of screen*/
+
+#showProduct .container .infoContainer .info
+{
+
+	text-align: left;
+	/*border: 2px solid hotpink;*/
+	position: absolute;
+	margin-left: 500px;
+
+}
+
+#showProduct .container .containerPQA .productQuantityAdjusting
+{
+	position: absolute;
+	/*border: 2px solid orange;*/
+	margin-top: 165px;
+	margin-left: 500px;
+
+}
+
+#showProduct .container .containerPQA .cartContainerButtons
+{
+
+	position: absolute;
+	/*border: 2px solid blue;*/
+	margin-left: 500px;
+	margin-top: 295px;
+
+
+}
+
+
+
+/**The SECOND section */
+
+
+.pickChoiceTitle
+{
+
+	height: 80px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.pickChoiceTitle h2
+{
+
+	color: purple;
+	font-size: 20px;
+	padding-top:10px ;
+	border-bottom: 3px solid #F0F0F0;
+
+}
+
+
+
+/**The THIRD section */
+
+
+#variatyContainer
+{
+	position: relative;
+	height: 500px;
+	width: 100%;
+
+	margin: auto;
+	/*overflow: hidden;*/
+	width: 15%;
+	
+}
+
+
+#variatyContainer .variatyInfoContainer
+{
+
+	position: absolute;
+	/*border:5px dashed yellowgreen;*/
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/*FOURTH SECTION-DESCRIPTION*/
+
+#description
+{
+	width: 100%;
+	height: auto;
+}
+
+
+#description div h2
+{
+	color: purple;
+	font-size: 20px;
+	border-bottom: 3px solid #F0F0F0;
+}
+
+#description #desc ul
+{
+	list-style: none;
+}
+
+
+
+/*FIFTH SECTION*/
+
+
+#details
+{
+	width: 100%;
+	height: auto;
+}
+
+
+#details div h2
+{
+	color: purple;
+	font-size: 20px;
+	border-bottom: 3px solid #F0F0F0;
+}
+
+
+#details #characteristics ul
+{
+	list-style: none;
+}
+
+
+/**promotion Section*/
+
+#promoContainer
+{
+	width: 100%;
+	height: 600px;
+}
+
+#promoContainer div h2
+{
+	color: purple;
+	font-size: 20px;
+	border-bottom: 3px solid #F0F0F0;
+}
+
+#promoContainer .promoInfoContainer
+{
+	height:500px;
+	position: relative;
+}
+
+/**adjust div sizes and images in the divs*/
+
+
+#promoContainer
+{
+	height:600px;
+}
+
+
+#promoContainer .promoInfoContainer .threeDiv
+{
+	height: 225px;
+	width: 30.33%;
+	float: left;
+	margin: 0 1.5%;
+	margin-top:10.5% ;
+}
+
+
+#promoContainer .promoInfoContainer .threeDiv img
+{
+	height: 170px;
+	width: 170px;
+	border:2px solid purple;
+}
+
+
+#promoContainer .promoInfoContainer .threeDiv .threeP
+{
+	text-align: center;
+	width:120px;
+	margin: 20px;
+	float: right;
+	font-size: 12px;
+}
+
+
+
+
